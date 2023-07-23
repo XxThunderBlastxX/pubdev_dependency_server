@@ -6,5 +6,7 @@ import (
 )
 
 func Routes(app *fiber.App) {
-	app.Get("/", controller.PubdevPackageController())
+	app.Get("/", controller.InitialController())
+
+	app.Get("/search", controller.PubdevPackageController())
 }
