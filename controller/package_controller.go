@@ -6,8 +6,8 @@ import (
 	"strings"
 )
 
-// PubdevPackageController function to get packages from pub.dev for a given query
-func PubdevPackageController() fiber.Handler {
+// PackageController function to get packages from pub.dev for a given query
+func PackageController() fiber.Handler {
 	return func(ctx *fiber.Ctx) error {
 		// packages contains the list of packages
 		var packages models.PackageList
